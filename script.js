@@ -36,6 +36,7 @@ searchCity = () => {
   getWeatherData(city)
     .then((response) => {
       console.log(response);
+      showWeatherData(response);
     })
     .catch((error) => {
       console.log(error);
@@ -47,5 +48,11 @@ searchCity = () => {
  * HINT: make sure to console log the weatherData to see how the data looks like
  */
 showWeatherData = (weatherData) => {
-  //CODE GOES HERE
+  //We are getting all these through console
+  document.getElementById("city-name").innerText = weatherData.name;
+  document.getElementById("weather-type").innerText =
+    weatherData.weather[0].main;
+  document.getElementById("temp").innerText = weatherData.main.temp;
+  document.getElementById("min-temp").innerText = weatherData.main.temp_min;
+  document.getElementById("max-temp").innerText = weatherData.main.temp_max;
 };
