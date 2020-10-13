@@ -20,6 +20,8 @@ const fog =
   'url("https://androidwalls.net/wp-content/uploads/2014/10/Horror%20Misty%20Dark%20Forest%20Android%20Wallpaper-360x640.jpg")';
 const drizzle =
   'url("https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80")';
+const haze =
+  'url("https://i.pinimg.com/originals/14/a8/12/14a8124953e7dfd065b23116370346e6.jpg")';
 const wallpaper =
   'url("https://i.pinimg.com/originals/41/21/1d/41211d15cf56d9827c25d98ece667fc5.jpg")';
 
@@ -97,6 +99,9 @@ showWeatherData = (weatherData) => {
         break;
       case "drizzle":
         mainElement.style.backgroundImage = drizzle;
+        break;
+      case "haze":
+        mainElement.style.backgroundImage = haze;
         break;
       default:
         mainElement.style.backgroundImage = wallpaper;
